@@ -7,22 +7,102 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Introduction</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="patents.html">Patents</a>
-    <a href="awards.html">Awards</a>
-    <a href="projects.html">Projects</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="service.html">Academic Services</a>
-  </nav>
+	<nav>
+		<a href="index.html">Introduction</a>
+		<!-- <a href="research.html">Research</a> -->
+		<a href="publications.html">Publications</a>
+		<a href="projects.html">Projects</a>
+		<a href="awards.html">Awards</a>
+		<a href="service.html">Academic Service</a>
+		<a href="teaching.html">Teaching</a>
+		<a href="patents.html">Patents</a>
+	</nav>
   <div class="container">
     <h1>Awards</h1>
-    <p>See <code>content/awards.md</code> for your awards list.</p>
+    <p>&bull; <a target="blank" href="https://ce.xmu.edu.cn/info/1026/1100.htm">IEEE IWCMC 2025 最佳论文奖，2025</a> </p>
+	<p>&bull; 中国地理信息协会地理信息科技进步一等奖，2024 </p>
+	<p>&bull; 厦门大学高等教育教学成果奖一等奖，2023 </p>
+	<p>&bull; 厦门市高层次人才，2023 </p>
+	<p>&bull; ACM UbiComp 2021 CPD 最佳论文奖，2021 </p>
+	<p>&bull; 福建省高层次人才，2021 </p>
+	<p>&bull; 中国电子学会自然科学二等奖，2019 </p>
+	<p>&bull; 福建省科技进步三等奖，2019 </p>
+	<p>&bull; 福建省引进高层次人才，2019 </p>
+	<p>&bull; 清华大学优秀博士学位论文奖, 2017 </p>
+	<p>&bull; 清华大学优秀博士毕业生, 2017 </p>
+	<p>&bull; 北京市优秀毕业生, 2017 </p>
+	<p>&bull; 清华大学电子系科创“电子之星”奖, 2017 </p>
+	<p>&bull; 清华大学电子系“学术新秀”奖, 2016 </p>
+	<p>&bull; 博士研究生国家奖学金, 2016</p>
+	<p>&bull; 清华大学优秀研究生支持计划暨唐立新奖学金, 2015</p>
+	<p>&bull; 硕士研究生国家奖学金, 2014</p>
+	<p>&bull; 清华大学本科优良毕业生, 2012</p>
+	<p>&bull; <a target="blank" href="https://ce.xmu.edu.cn/info/1026/1100.htm">Best Paper Award of IEEE IWCMC 2025, 2025</a> </p>
+	<p>&bull; First Prize in the Science and Technology Progress Award of China Association for GeoSpatial Industry and Sciences, 2024 </p>
+	<p>&bull; First Prize of Higher Education and Teaching Award of Xiamen University, 2023 </p>
+	<p>&bull; High-Level Talents of Xiamen, 2023 </p>
+	<p>&bull; Best Paper Award of ACM UbiComp 2021 CPD, 2021 </p>
+	<p>&bull; High-Level Talents of Fujian Province, 2021 </p>
+	<p>&bull; Second Prize in the Natural Science Award of Chinese Institute of Electronics, 2019 </p>
+	<p>&bull; Third Prize of Fujian Science and Technology Progress Award, 2019 </p>
+	<p>&bull; High-Level Introduced Talents of Fujian Province, 2019 </p>
+	<p>&bull; Outstanding Doctoral Dissertation Award of Tsinghua University, 2017 </p>
+	<p>&bull; Outstanding PhD Graduate Award of Tsinghua University, 2017 </p>
+	<p>&bull; Outstanding Graduate Award of Beijing City, 2017 </p>
+	<p>&bull; The EE Star Award in Science and Innovation, Tsinghua University, 2017 </p>
+	<p>&bull; Outstanding Academic Youth Award, Department of EE, Tsinghua University, 2016 </p>
+	<p>&bull; National Scholarship for PhD Graduates, 2016</p>
+	<p>&bull; The Tsinghua Excellent Graduate Students Support Project and Tang-Lixin Scholarship, 2015</p>
+	<p>&bull; National Scholarship for Master Graduates, 2014</p>
+	<p>&bull; Excellent Undergraduate Award in Tsinghua, 2012</p>
+	<!-- <p>&bull; Excellent Visiting Fellowship in City University of Hong Kong</p>
+    <p>&bull; The Excellent Student Scholarship in THU (Twice)</p>
+    <p>&bull; First Prize of the Beijing Undergraduate Physics Olympic Competition</p> -->
+	<!--<p>&bull; National Undergraduate Endeavour Scholarship</p>-->
+	<!--<p>&bull; Tsinghua Second-Class Scholarship for Freshmen</p>-->
   </div>
   <footer>
-    &copy; 2026 [Your Name]. All rights reserved.
+	&copy; 2026 Sicong Liu. All rights reserved. <span style="margin-left:1.5em;">Last updated on February 19, 2026.</span>
+	<!-- Back to Top Button -->
+	<button id="backToTopBtn" title="Back to Top">&#8679;</button>
+	<script>
+		// Show/hide button on scroll
+		const backToTopBtn = document.getElementById('backToTopBtn');
+		window.onscroll = function() {
+			if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+				backToTopBtn.style.display = 'block';
+			} else {
+				backToTopBtn.style.display = 'none';
+			}
+		};
+		// Scroll to top on click
+		backToTopBtn.onclick = function() {
+			window.scrollTo({top: 0, behavior: 'smooth'});
+		};
+	</script>
+	<style>
+	#backToTopBtn {
+		display: none;
+		position: fixed;
+		right: 32px;
+		bottom: 48px;
+		z-index: 99;
+		border: none;
+		outline: none;
+		background: #2c3e50;
+		color: #fff;
+		cursor: pointer;
+		padding: 0.7em 1em 0.6em 1em;
+		border-radius: 50%;
+		font-size: 1.7em;
+		box-shadow: 0 2px 8px rgba(44,62,80,0.18);
+		transition: background 0.2s, box-shadow 0.2s;
+	}
+	#backToTopBtn:hover {
+		background: #1a5ca4;
+		box-shadow: 0 4px 16px rgba(44,62,80,0.22);
+	}
+	</style>
   </footer>
 </body>
 </html>

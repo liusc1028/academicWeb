@@ -9,20 +9,74 @@
 <body>
   <nav>
     <a href="index.html">Introduction</a>
-    <a href="research.html">Research</a>
+    <!-- <a href="research.html">Research</a> -->
     <a href="publications.html">Publications</a>
-    <a href="patents.html">Patents</a>
-    <a href="awards.html">Awards</a>
     <a href="projects.html">Projects</a>
+    <a href="awards.html">Awards</a>
+    <a href="service.html">Academic Service</a>
     <a href="teaching.html">Teaching</a>
-    <a href="service.html">Academic Services</a>
+    <a href="patents.html">Patents</a>
   </nav>
   <div class="container">
     <h1>Academic Services</h1>
-    <p>See <code>content/service.md</code> for your academic service roles.</p>
+    <p>&bull; IEEE Senior Member, 2022</p>
+    <p>&bull; Executive Guest Editor, Digital Signal Processing, 2023</p>
+<!--	<p>&bull; Editorial Board Member, Scientific Reports, 2025</p> -->
+	<p>&bull; Guest Editor, Study on Optical Communications, 2025</p>
+	<p>&bull; TPC Chair, ACM UbiComp CPD, 2022,</p>
+	<p>&bull; Guest Editor, Sensors Journal, 2021</p>
+	<p>&bull; TPC Chair, IEEE International Symposium on Power Line Communications (ISPLC) 2021</p>
+	<p>&bull; Workshop Chair, IEEE International Conference on Communications in China (ICCC) 2021</p>
+	<p>&bull; Associate Editor, Frontiers in Communications and Networks, 2020</p>
+	<p>&bull; Publication Chair, IEEE SmartGridComm 2019</p>
+	<p>&bull; Track Chair, IEEE ICCE 2019</p>
+	<p>&bull; Guest Editor, Future Internet Journal, 2017</p>
+	<p>&bull; TPC member, IEEE ICC, Globecom, SmartGridComm, WCNC, VTC, IWCMC, ICCC, ICSCC, WEDGE. </p>
+	<p>&bull; Reviewer, IEEE JSAC, TCOM, TSP, TWC, TVT, TIFS, TDSC, IoTJ, TBC, COMML, WCOMML.</p>
+
   </div>
   <footer>
-    &copy; 2026 [Your Name]. All rights reserved.
+    &copy; 2026 Sicong Liu. All rights reserved. <span style="margin-left:1.5em;">Last updated on February 19, 2026.</span>
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" title="Back to Top">&#8679;</button>
+    <script>
+      // Show/hide button on scroll
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          backToTopBtn.style.display = 'block';
+        } else {
+          backToTopBtn.style.display = 'none';
+        }
+      };
+      // Scroll to top on click
+      backToTopBtn.onclick = function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      };
+    </script>
+    <style>
+    #backToTopBtn {
+      display: none;
+      position: fixed;
+      right: 32px;
+      bottom: 48px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background: #2c3e50;
+      color: #fff;
+      cursor: pointer;
+      padding: 0.7em 1em 0.6em 1em;
+      border-radius: 50%;
+      font-size: 1.7em;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.18);
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    #backToTopBtn:hover {
+      background: #1a5ca4;
+      box-shadow: 0 4px 16px rgba(44,62,80,0.22);
+    }
+    </style>
   </footer>
 </body>
 </html>
