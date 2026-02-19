@@ -9,13 +9,16 @@ nav {
   background: #2c3e50;
   padding: 1em 0;
   text-align: center;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 nav a {
   color: #fff;
   text-decoration: none;
-  margin: 0 1.5em;
+  margin: 0 0.8em;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.05em;
+  display: inline-block;
 }
 nav a:hover {
   text-decoration: underline;

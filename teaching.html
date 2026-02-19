@@ -9,20 +9,66 @@
 <body>
   <nav>
     <a href="index.html">Introduction</a>
-    <a href="research.html">Research</a>
+    <!-- <a href="research.html">Research</a> -->
     <a href="publications.html">Publications</a>
-    <a href="patents.html">Patents</a>
-    <a href="awards.html">Awards</a>
     <a href="projects.html">Projects</a>
-    <a href="teaching.html">Teaching</a>
+    <a href="awards.html">Awards</a>
     <a href="service.html">Academic Services</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="patents.html">Patents</a>
   </nav>
   <div class="container">
     <h1>Teaching</h1>
-    <p>See <code>content/teaching.md</code> for your teaching information.</p>
+    	<p>&bull; CST304: Digital Signal Processing, Undergraduates, Fall 2018/2019, Xiamen University Malaysia (English)</p>
+	<p>&bull; CST103: Programming Language (C), Undergraduates, Fall 2018/2019, Xiamen University Malaysia (English)</p>
+	<p>&bull; 通信电路原理, 本科生, 2018/2019、2019/2020、2020/2021、2021/2022、2023/2024、2024/2025学年，厦门大学</p>
+	<p>&bull; 数字通信, 研究生, 2022/2023、2023/2024、2024/2025、2025/2026学年，厦门大学</p>
+	<p>&bull; 无线通信原理, 本科生, 2019/2020、2020/2021、2021/2022学年, 厦门大学</p>
+	<p>&bull; 数字信号处理实验, 本科生, 2019/2020、2020/2021学年，厦门大学</p>
+	<p>&bull; 数字电视技术, 本科生, 2022/2023学年，厦门大学</p>
   </div>
   <footer>
-    &copy; 2026 [Your Name]. All rights reserved.
+    &copy; 2026 Sicong Liu. All rights reserved. <span style="margin-left:1.5em;">Last updated on February 19, 2026.</span>
+    <!-- Back to Top Button -->
+    <button id="backToTopBtn" title="Back to Top">&#8679;</button>
+    <script>
+      // Show/hide button on scroll
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      window.onscroll = function() {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          backToTopBtn.style.display = 'block';
+        } else {
+          backToTopBtn.style.display = 'none';
+        }
+      };
+      // Scroll to top on click
+      backToTopBtn.onclick = function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+      };
+    </script>
+    <style>
+    #backToTopBtn {
+      display: none;
+      position: fixed;
+      right: 32px;
+      bottom: 48px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background: #2c3e50;
+      color: #fff;
+      cursor: pointer;
+      padding: 0.7em 1em 0.6em 1em;
+      border-radius: 50%;
+      font-size: 1.7em;
+      box-shadow: 0 2px 8px rgba(44,62,80,0.18);
+      transition: background 0.2s, box-shadow 0.2s;
+    }
+    #backToTopBtn:hover {
+      background: #1a5ca4;
+      box-shadow: 0 4px 16px rgba(44,62,80,0.22);
+    }
+    </style>
   </footer>
 </body>
 </html>
