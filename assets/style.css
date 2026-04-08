@@ -115,17 +115,26 @@ footer {
 
 @media (max-width: 700px) {
   nav {
-    width: calc(100% - 0.75em);
+    width: calc(100% - 0.5em);
+    padding: 0.35em max(0.35em, env(safe-area-inset-right)) 0 max(0.35em, env(safe-area-inset-left));
     overflow-x: auto;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x proximity;
+    scroll-padding-inline: 1rem;
+    overscroll-behavior-x: contain;
     touch-action: pan-x;
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
   }
 
   nav a {
-    flex: 0 0 7.75rem;
-    padding: 0.65em 0.8em 0.85em 0.8em;
+    flex: 0 0 auto;
+    min-width: 7.6rem;
+    padding: 0.65em 0.95em 0.85em 0.95em;
     scroll-snap-align: start;
   }
 
@@ -137,9 +146,14 @@ footer {
     font-size: 0.78em;
   }
 
+  nav a[aria-current="page"],
+  nav a[aria-current="page"]:hover {
+    box-shadow: 0 -1px 8px rgba(255,255,255,0.32), 0 0 0 1px rgba(213,224,236,0.9), inset 0 -1px 2px rgba(0, 0, 0, 0.05);
+  }
+
   .container,
   footer {
-    width: calc(100% - 0.75em);
+    width: calc(100% - 0.5em);
   }
 
   .container {
