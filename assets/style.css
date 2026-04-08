@@ -15,6 +15,8 @@ nav {
   position: relative;
   z-index: 3;
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   align-items: flex-end;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(44,62,80,0.08);
@@ -105,4 +107,65 @@ footer {
   width: calc(100% - 1.6em);
   box-sizing: border-box;
   border-radius: 0 0 14px 14px;
+}
+
+.profile-photo {
+  max-width: 100%;
+}
+
+@media (max-width: 700px) {
+  nav {
+    width: calc(100% - 0.75em);
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+    touch-action: pan-x;
+  }
+
+  nav a {
+    flex: 0 0 7.75rem;
+    padding: 0.65em 0.8em 0.85em 0.8em;
+    scroll-snap-align: start;
+  }
+
+  nav a .nav-cn {
+    font-size: 0.88em;
+  }
+
+  nav a .nav-en {
+    font-size: 0.78em;
+  }
+
+  .container,
+  footer {
+    width: calc(100% - 0.75em);
+  }
+
+  .container {
+    padding: 1.35em 1em;
+  }
+
+  footer {
+    padding: 1.25em 1em;
+  }
+
+  .name-header {
+    font-size: 1.7em;
+    line-height: 1.2;
+  }
+
+  .front-matter {
+    max-width: none;
+    padding: 0.8em 1em 0.8em 0.9em;
+    font-size: 1em;
+  }
+
+  .profile-photo {
+    float: none !important;
+    display: block;
+    width: min(62vw, 220px) !important;
+    height: auto !important;
+    margin: 0 auto 1.25em auto !important;
+  }
 }
